@@ -27,5 +27,5 @@ var byeSpeaker = (function() {
     // 'byeSpeaker' on the global scope as well.
     // xxxx.xxxx = byeSpeaker;
 
-    this.byeSpeaker = byeSpeaker;
+    
 })();
