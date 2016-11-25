@@ -5,7 +5,7 @@
         .controller("NarrowItDownController", narrowItDownController)
         .service("MenuHttpService", menuHttpService)
         .service("MenuSearchService", menuSearchService)
-        .constant("ApiBasePath", "http://davids-restaurant.herokuapp.com")
+        .constant("ApiBasePath", "https://davids-restaurant.herokuapp.com")
         .directive("foundItems", foundItemsDirective);
 
 
