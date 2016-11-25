@@ -1,0 +1,15 @@
+<div class="panel panel-default" ng-show="fidc.showResults">
+    <table ng-show="fidc.items.length">
+        <th></th>
+        <th>Short Name</th>
+        <th>Name</th>
+        <th>Description</th>
+        <tr ng-repeat="item in fidc.items">
+            <td><button ng-click="fidc.onRemove($index);">Don't Want This One!</button></td>
+            <td>{{item.short_name}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+        </tr>
+    </table>
+    <h3 ng-hide="fidc.items.length">Nothing found</h3>
+</div>
