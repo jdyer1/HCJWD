@@ -13,7 +13,7 @@
 
         }).state('categories', {
             url: '/categories',
-            templateUrl: '../templates/categories.template.html',
+            templateUrl: 'templates/categories.template.html',
             controller: 'CategoriesController as cat',
             resolve: {
                 categories: ['MenuDataService', function(menuDataService) {
