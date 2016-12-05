@@ -9,11 +9,11 @@
         $urlRouterProvider.otherwise('/');
         $stateProvider.state('home', {
             url: '/',
-            templateUrl: '/templates/home.template.html'
+            templateUrl: '../templates/home.template.html'
 
         }).state('categories', {
             url: '/categories',
-            templateUrl: '/templates/categories.template.html',
+            templateUrl: '../templates/categories.template.html',
             controller: 'CategoriesController as cat',
             resolve: {
                 categories: ['MenuDataService', function(menuDataService) {
@@ -25,7 +25,7 @@
             params: {
                 sn: null
             },
-            templateUrl: '/templates/items.template.html',
+            templateUrl: '../templates/items.template.html',
             controller: 'ItemsController as itemc',
             resolve: {
                 items: ['$stateParams', 'MenuDataService', function($stateParams, menuDataService) {
