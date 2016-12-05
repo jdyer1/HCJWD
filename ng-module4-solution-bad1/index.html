@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Welcome to our Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body ng-app="MenuApp">
+    <div ng-controller="CategoriesController as cat" class="container">
+      <div class="jumbotron">
+        <h1>Welcome to our Restaurant</h1>
+      </div>
+        <categories items="cat.categories"></categories>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/mainApp.module.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+</body>
+</html>
